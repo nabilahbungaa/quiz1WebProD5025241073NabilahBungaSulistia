@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabilah Bunga Sulistia - Tourist Places</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="images/LogoNabilahITS.jpg" alt="Logo Nabilah" class="logo-image">
+                <a href="home.html" class="logo-text">NabilahBungaS</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="hometown.html">Hometown</a></li>
+                    <li><a href="food.html">Local Food</a></li>
+                    <li><a href="tourist.html" class="active">Tourist Places</a></li>
+                </ul>
+            </nav>
+            <a href="home.html" class="cta-button">Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Tourist Content -->
+    <section class="tourist-content">
+        <div class="container">
+            <h2 class="section-title">Tempat Wisata Mojokerto</h2>
+            
+            <div class="tourist-grid">
+                <!-- 20 Tourist Places -->
+                <div class="tourist-card glass-card" onclick="openTouristModal(0)">
+                    <img src="images/SitusTrowulan.jpeg" alt="Situs Trowulan" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Situs Trowulan</h3>
+                        <p>Kompleks arkeologi terluas dan terpenting di wilayah Mojokerto yang diyakini sebagai pusat pemerintahan Kerajaan Majapahit.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(1)">
+                    <img src="images/CandiTikus.jpeg" alt="Candi Tikus" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Candi Tikus</h3>
+                        <p>Kompleks petirtaan (kolam ritual) berupa basemen batu bata yang ditemukan di area Trowulan dan dipulihkan pada tahun 1980-an.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(2)">
+                    <img src="images/CandiBajangRatu.jpg" alt="Candi Bajang Ratu" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Candi Bajang Ratu</h3>
+                        <p>Gerbang bergaya paduraksa yang menjadi salah satu simbol arsitektur Majapahit paling terkenal di Trowulan.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(3)">
+                    <img src="images/GapuraWringinlawang.jpeg" alt="Gapura Wringinlawang" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Gapura Wringinlawang</h3>
+                        <p>Gerbang batu bata besar peninggalan Majapahit—jenis candi bentar / split gateway—yang memancarkan karakter arsitektur Jawa kuno.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(4)">
+                    <img src="images/MuseumGubugWayang.jpeg" alt="Museum Gubug Wayang" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Museum Gubug Wayang</h3>
+                        <p>Museum yang menyimpan koleksi wayang kulit, wayang golek, topeng, dan artefak pertunjukan tradisional Nusantara.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(5)">
+                    <img src="images/AlunAlunKotaMojokerto.jpeg" alt="Alun-Alun Mojokerto" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Alun-Alun Kota Mojokerto</h3>
+                        <p>Ruang publik inti yang berfungsi sebagai jantung sosial kota—dengan taman, monumen, area berkumpul serta jajanan malam yang khas.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(6)">
+                    <img src="images/KolamSegaran2.jpeg" alt="Kolam Segaran" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Kolam Segaran</h3>
+                        <p>Struktur kolam raksasa di Trowulan yang diyakini sebagai salah satu reservoir atau kolam rekreasi Majapahit.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(7)">
+                    <img src="images/CandiJulotundo.jpeg" alt="Candi Jolotundo" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Candi Jolotundo</h3>
+                        <p>Kompleks petirtaan suci yang terletak di lereng Gunung Penanggungan dengan struktur batuannya yang rapi.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(8)">
+                    <img src="images/GunungPenanggungan.jpeg" alt="Gunung Penanggungan" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Gunung Penanggungan</h3>
+                        <p>Gunung yang relatif rendah namun kaya situs arkeologi dengan jalur dipenuhi candi-candi kecil dan prasasti.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(9)">
+                    <img src="images/AirTerjunCobanCanggu.jpeg" alt="Air Terjun Coban Canggu" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Air Terjun Coban Canggu</h3>
+                        <p>Air terjun yang terletak di Desa Padusan, Kecamatan Pacet—dikenal karena debit airnya yang jernih.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(10)">
+                    <img src="images/BukitWatuJengger.jpeg" alt="Bukit Watu Jengger" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Bukit Watu Jengger</h3>
+                        <p>Bukit di kawasan Taman Hutan Raya Raden Soerjo yang banyak diminati karena pemandangan panoramanya.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(11)">
+                    <img src="images/RanuMnaduro.jpg" alt="Ranu Manduro" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Ranu Manduro</h3>
+                        <p>Danau/hamparan alam di kawasan pegunungan Mojokerto dengan pemandangan hijau luas dan kabut pagi yang cantik.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(12)">
+                    <img src="images/AirTerjunWatuLumpang.jpeg" alt="Air Terjun Watu Lumpang" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Air Terjun Watu Lumpang</h3>
+                        <p>Salah satu air terjun populer di kawasan Pacet/Mojokerto—terkenal karena aksesnya yang mudah.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(13)">
+                    <img src="images/PemandianAirPanasPadusan.jpeg" alt="Pemandian Air Panas Padusan" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Pemandian Air Panas Padusan</h3>
+                        <p>Fasilitas wisata alam yang memanfaatkan mata air panas dari aktivitas vulkanik Gunung Welirang.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(14)">
+                    <img src="images/MahaviharaMjapahit.jpeg" alt="Maha Vihara Mojopahit" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Maha Vihara Mojopahit</h3>
+                        <p>Kompleks vihara besar di Trowulan yang menjadi pusat kegiatan Buddhis dan rumah bagi patung Buddha tidur terbesar.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(15)">
+                    <img src="images/BukitKayoePutih.jpeg" alt="Bukit Kayoe Putih" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Bukit Kayoe Putih</h3>
+                        <p>Destinasi wisata edukasi dan alam yang memanfaatkan hamparan hutan kayu putih sebagai daya tarik utama.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(16)">
+                    <img src="images/TamanGhanjaran.jpeg" alt="Taman Ghanjaran" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Taman Ghanjaran</h3>
+                        <p>Taman rekreasi di kawasan Trawas yang menyediakan wahana keluarga, taman bunga, kolam renang, dan area bermain.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(17)">
+                    <img src="images/TamanOrganikBrenjonk.jpeg" alt="Kampung Organik Brenjonk" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Kampung Organik Brenjonk</h3>
+                        <p>Desa wisata berbasis pertanian organik di Trawas yang memadukan edukasi pertanian dan pengalaman panen.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(18)">
+                    <img src="images/DuyungTrawasHill.jpeg" alt="Duyung Trawas Hill" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Duyung Trawas Hill</h3>
+                        <p>Area bukit dan penginapan/outbound di desa Duyung (Trawas) yang menawarkan panorama perbukihan.</p>
+                    </div>
+                </div>
+                
+                <div class="tourist-card glass-card" onclick="openTouristModal(19)">
+                    <img src="images/AirTerjunDlundung.jpeg" alt="Air Terjun Dlundung" class="tourist-img">
+                    <div class="tourist-content">
+                        <h3>Air Terjun Dlundung</h3>
+                        <p>Salah satu air terjun yang memorable di Trawas—memiliki ketinggian sekitar 60 meter dengan kolam kecil di bawahnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Modal -->
+    <div id="touristModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('touristModal')">&times;</span>
+            <img id="modalTouristImg" class="modal-img" src="" alt="">
+            <h2 id="modalTouristTitle"></h2>
+            <p id="modalTouristDesc"></p>
+            
+            <div class="modal-details">
+                <div>
+                    <h3>Lokasi</h3>
+                    <p id="modalTouristLocation"></p>
+                    
+                    <h3>Jam Operasional</h3>
+                    <p id="modalTouristHours"></p>
+                </div>
+                <div>
+                    <h3>Peta Lokasi</h3>
+                    <iframe id="modalTouristMap" class="modal-map" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Nabilah Bunga Sulistia</h3>
+                <p>Website pribadi untuk berbagi informasi tentang diri, kota asal, kuliner khas, dan tempat wisata Mojokerto.</p>
+            </div>
+            
+            <div class="footer-section footer-contact">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-envelope"></i> nabilahbunga26@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Mojokerto, Jawa Timur</p>
+                <p><i class="fas fa-graduation-cap"></i> Institut Teknologi Sepuluh Nopember (ITS)</p>
+                
+                <div class="social-icons">
+                    <a href="mailto:nabilahbunga26@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nabilah-bunga-produktif-9b9331318?originalSubdomain=id" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/nabilahbungaa_" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Navigasi Cepat</h3>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="profile.html">Profile</a></p>
+                <p><a href="hometown.html">Hometown</a></p>
+                <p><a href="food.html">Local Food</a></p>
+                <p><a href="tourist.html">Tourist Places</a></p>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Nabilah Bunga Sulistia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
