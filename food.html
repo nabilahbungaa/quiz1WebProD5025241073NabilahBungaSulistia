@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabilah Bunga Sulistia - Local Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="images/LogoNabilahITS.jpg" alt="Logo Nabilah" class="logo-image">
+                <a href="home.html" class="logo-text">NabilahBungaS</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="hometown.html">Hometown</a></li>
+                    <li><a href="food.html" class="active">Local Food</a></li>
+                    <li><a href="tourist.html">Tourist Places</a></li>
+                </ul>
+            </nav>
+            <a href="tourist.html" class="cta-button">Explore Tourist Places</a>
+        </div>
+    </header>
+
+    <!-- Food Content -->
+    <section class="food-content">
+        <div class="container">
+            <h2 class="section-title">Kuliner Khas Mojokerto</h2>
+            
+            <div class="food-grid">
+                <div class="food-card glass-card" onclick="openFoodModal(0)">
+                    <img src="images/OndeOnde.jpeg" alt="Onde-onde" class="food-img">
+                    <div class="food-content">
+                        <h3>Onde-onde</h3>
+                        <p>Kue tradisional berbahan tepung ketan, isi kacang hijau manis, permukaan ditaburi wijen. Sering ditemukan sebagai oleh-oleh.</p>
+                    </div>
+                </div>
+                
+                <div class="food-card glass-card" onclick="openFoodModal(1)">
+                    <img src="images/LontongBalap.webp" alt="Lontong Balap" class="food-img">
+                    <div class="food-content">
+                        <h3>Lontong Balap</h3>
+                        <p>Lontong disajikan dengan tahu goreng, tauge, lentho, bawang goreng dan kuah berbasis kaldu kacang/petis.</p>
+                    </div>
+                </div>
+                
+                <div class="food-card glass-card" onclick="openFoodModal(2)">
+                    <img src="images/BotokTempe.jpeg" alt="Botok Tempe" class="food-img">
+                    <div class="food-content">
+                        <h3>Botok Tempe</h3>
+                        <p>Olahan tempe yang diulek kasar dicampur ampas kelapa, bumbu, dan kadang udang/teri, lalu dibungkus daun pisang dan dikukus.</p>
+                    </div>
+                </div>
+                
+                <div class="food-card glass-card" onclick="openFoodModal(3)">
+                    <img src="images/BuburSruntul.jpeg" alt="Bubur Sruntul" class="food-img">
+                    <div class="food-content">
+                        <h3>Bubur Sruntul</h3>
+                        <p>Makanan manis tradisional Mojokerto yang dibuat dari tepung tapioka/tepung sagu yang dibentuk butiran kecil menyerupai mutiara.</p>
+                    </div>
+                </div>
+                
+                <div class="food-card glass-card" onclick="openFoodModal(4)">
+                    <img src="images/SateKeong.jpeg" alt="Sate Keong" class="food-img">
+                    <div class="food-content">
+                        <h3>Sate Keong</h3>
+                        <p>Olahan keong sawah yang ditusuk dan dibumbui khas daerah; teksturnya kenyal dan cita rasanya gurih bila dimasak dengan bumbu tepat.</p>
+                    </div>
+                </div>
+                
+                <div class="food-card glass-card" onclick="openFoodModal(5)">
+                    <img src="images/esgronjongan.jpeg" alt="Es Gronjongan Majapahit" class="food-img">
+                    <div class="food-content">
+                        <h3>Es Gronjongan Majapahit</h3>
+                        <p>Minuman tradisional Mojokerto: agar-agar, santan, sirup. Populer sebagai minuman penyegar di cuaca panas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Modal -->
+    <div id="foodModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('foodModal')">&times;</span>
+            <img id="modalFoodImg" class="modal-img" src="" alt="">
+            <h2 id="modalFoodTitle"></h2>
+            <p id="modalFoodDesc"></p>
+            
+            <div class="modal-details">
+                <div>
+                    <h3>Bahan Utama</h3>
+                    <ul id="modalFoodIngredients"></ul>
+                </div>
+                <div>
+                    <h3>Tempat Terkenal</h3>
+                    <p id="modalFoodPlace"></p>
+                    
+                    <h3>Kisaran Harga</h3>
+                    <p id="modalFoodPrice"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Nabilah Bunga Sulistia</h3>
+                <p>Website pribadi untuk berbagi informasi tentang diri, kota asal, kuliner khas, dan tempat wisata Mojokerto.</p>
+            </div>
+            
+            <div class="footer-section footer-contact">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-envelope"></i> nabilahbunga26@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Mojokerto, Jawa Timur</p>
+                <p><i class="fas fa-graduation-cap"></i> Institut Teknologi Sepuluh Nopember (ITS)</p>
+                
+                <div class="social-icons">
+                    <a href="mailto:nabilahbunga26@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nabilah-bunga-produktif-9b9331318?originalSubdomain=id" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/nabilahbungaa_" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Navigasi Cepat</h3>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="profile.html">Profile</a></p>
+                <p><a href="hometown.html">Hometown</a></p>
+                <p><a href="food.html">Local Food</a></p>
+                <p><a href="tourist.html">Tourist Places</a></p>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Nabilah Bunga Sulistia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
